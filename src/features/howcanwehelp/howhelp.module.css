@@ -1,0 +1,135 @@
+.how_help_container {
+    width: 100%;
+    padding: 151px 70px 162px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #F6FBF8;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help_left {
+    margin-bottom: 50px;
+}
+.help_left>span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.help_left > span > h2 {
+    font-weight: 400;
+    font-size:30px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+
+    color: #171717;
+    margin-bottom: 0.5rem;
+}
+
+.help_left > span > p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+    color: #171717;
+}
+
+
+.help_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.help_right > img {
+
+    object-fit: cover;
+}
+
+.business {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+justify-content:center;
+}
+
+.business_item {
+    height: 35px;
+    border: 1px solid #e4e3e3;
+    border-radius: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2b2b2b;
+    margin: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+}
+@media screen and  (min-width:500px){
+    .business_item{
+        font-size: 16px;    height: 41px;
+        margin: 19px 0 0 10px;
+    }
+}
+
+@media screen and (min-width:610px){
+    .help_left > span > h2 {
+        font-size: 35px;
+    }
+}
+@media screen and (min-width:705px){
+    .help_left > span > h2 {
+        font-size: 40px;
+    }
+    .help_left > span >p{
+        font-size: 18px;
+    }
+.business_item{
+    font-size: 18px;
+}
+}
+
+@media screen and  (min-width: 1000px) {
+    .help_left > span > h2 {
+        font-size: 45px;
+        line-height: 60px;
+        width: 70%;
+    }
+
+    .how_help_container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 191px 70px 162px;
+    }
+
+    .help_left, .help_right {
+        width: 50%;
+    }
+
+    .help_left {
+        margin-bottom: 0;
+    }
+
+    .business {
+        max-width: 493px;
+        justify-content:flex-start;
+    }
+    .help_left>span{
+        display:inline-block;
+    }
+    .help_left > span >p{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and  (min-width: 1400px) {
+    .help_left > h2 {
+        font-size: 53px;
+    }
+}
+
+
