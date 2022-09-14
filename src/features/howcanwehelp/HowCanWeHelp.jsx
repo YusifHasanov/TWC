@@ -27,8 +27,8 @@ const HowCanWeHelp = () => {
           <p>Sizin biznes istiqamətiniz?</p>
         </span>
         <div className={`${styles.business}`}>
-          {businness.map((b) => (
-            <div className={`${styles.business_item}`}>{b}</div>
+          {businness.map((b,id) => (
+            <div key={id} className={`${styles.business_item}`}>{b}</div>
           ))}
         </div>
       </div>

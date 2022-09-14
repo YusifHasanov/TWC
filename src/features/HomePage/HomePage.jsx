@@ -20,8 +20,8 @@ const HomePage = ({width}) => {
       <Meqaleler />
       <StartCareer />
       <ClientProjects />
-      <ContactUs />
-       <Footer/>
+      <ContactUs width={width} />
+       <Footer width={width}/>
     </>
   );
 };

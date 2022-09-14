@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./footer.module.css";
 
-const Footer = () => {
+const Footer = ({width}) => {
 
     const footerData = [
         {
@@ -39,16 +39,20 @@ const Footer = () => {
     return <div className={`${styles.footer_container}`}>
         <div className={`${styles.footer_content}`}>
             <div className={`${styles.footer_top}`}>
-                <h2>Uğura gedən <br/>yolda TWC ilə</h2>
+                <h2>
+                    Uğura gedən
+                    {width>900? (<><br/></>):null}
+                    yolda TWC ilə
+                </h2>
             </div>
             <div className={`${styles.footer_bottom}`}>
                 {
-                    footerData.map((data=>(
-                        <div className={`${styles.footer_item}`}>
+                    footerData.map(((data,id) => (
+                        <div key={id} className={`${styles.footer_item}`}>
                             <p className={`${styles.footer_title}`}>{data.title}</p>
                             <ul className={`${styles.footer_list}`}>
-                                {data.content.map((c)=>(
-                                    <li className={`${styles.footer_listItem}`}>{c}</li>
+                                {data.content.map((c,id) => (
+                                    <li key={id} className={`${styles.footer_listItem}`}>{c}</li>
                                 ))}
                             </ul>
                         </div>
@@ -56,7 +60,8 @@ const Footer = () => {
                 }
 
             </div>
-                <p className={`${styles.footer_end}`}>© 2022 Copy Think Wise Consulting MMC &amp;&amp; Designed by Yusif Hasanov</p>
+            <p className={`${styles.footer_end}`}>© 2022 Copy Think Wise Consulting MMC &amp;&amp; Designed by Yusif
+                Hasanov</p>
         </div>
         <p></p>
     </div>;

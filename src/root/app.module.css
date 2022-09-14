@@ -5,6 +5,7 @@
 }
 .app_container{
     background-color: #F6FBF8;
+    overflow: hidden;
 }
 html{
     scroll-behavior: smooth;

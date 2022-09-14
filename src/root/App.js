@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { ChakraProvider, useColorMode } from "@chakra-ui/react";
+
 import styles from "./app.module.css";
 import myTheme from "../features/chakraUI/Theme";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../features/HomePage/HomePage";
+import {ChakraProvider} from "@chakra-ui/react";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  console.log(width);
+
   const handleResize = () => {
     setWidth(window.innerWidth);
   };
