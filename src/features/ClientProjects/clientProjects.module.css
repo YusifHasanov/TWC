@@ -1,0 +1,70 @@
+.clientProjects_container {
+    padding-top: 162px;
+    background-color: #F6FBF8;
+}
+
+.clientProjects_container > p {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3.8499999046325684px;
+    line-height: 20px;
+    text-align: center;
+    color: #3e4954 !important;
+    margin-bottom: 16px;
+}
+
+.clientProjects_container > h2 {
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 52px;
+    text-align: center;
+    color: #3d4465;
+    margin-bottom: 0.5rem;
+}
+.client_carousel_container{
+    margin-top: 100px;
+}
+.carouselItem{
+    margin-left: auto;
+    margin-right: auto;
+}
+.carouselItem >span{
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #8b8b8b;
+    display: flex;
+    height: 237px;
+    justify-content: center;
+    width: 378px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carouselItem >span >img{
+    max-width: 50%;
+}
+.more_button{
+    height: 31px;
+    border-radius: 7px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
+    border: 1px solid #01ab8d;
+    width: 229px;
+    background: 0 0;
+color: #000 !important;
+}
+
+@media (min-width: 450px){
+    .clientProjects_container > h2 {
+        font-size: 35px;
+    }
+}
+@media (min-width: 650px){
+    .clientProjects_container > h2 {
+        font-size: 42px;
+    }
+}
